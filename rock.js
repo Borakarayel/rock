@@ -6,36 +6,44 @@
 //Random computer choice creator
 function getComputerChoice(max) {
     return Math.floor(Math.random()*max)};
-let computerMove= getComputerChoice(3);
-if(computerMove === 0) {computerMove ="Rock"}
-    else if (computerMove === 1){
-        computerMove ="Paper"}
-    else if (computerMove === 2){
-        computerMove ="Scissors"};
-
-console.log(computerMove) ;
+    //
+let computerSelection= getComputerChoice(3);
+if(computerSelection === 0) {computerSelection ="Rock"}
+    else if (computerSelection === 1){
+        computerSelection ="Paper"}
+    else if (computerSelection === 2){
+        computerSelection ="Scissors"};
 
 //Get User choice
-let userChoice = prompt("Please type Rock, Paper or Scissors !")
-userChoice = userChoice.toUpperCase().charAt(0)+
-userChoice.toLowerCase().slice(1);
+let playerSelection = "Paper" /*prompt("Please type Rock, Paper or Scissors !")
+playerSelection = playerSelection.toUpperCase().charAt(0)+
+playerSelection.toLowerCase().slice(1);*/
 
-//play a single round
+console.log(playerSelection) ;
+console.log(computerSelection) ;
 
-if (userChoice === computerMove) {
-    console.log("Draw!")}
-else 
-{
-if (userChoice === "Rock" && computerMove === "Scissors") {
-    console.log("Won!") }
-else if (userChoice === "Rock" && computerMove === "Paper") {
-    console.log("Lose!") }
-else if (userChoice === "Paper" && computerMove === "Rock") {
-    console.log("Won!") }
-else if (userChoice === "Paper" && computerMove === "Scissors") {
-    console.log("Lose!") }
-else if (userChoice === "Scissors" && computerMove === "Rock") {
-    console.log("Lose!") }
-else if (userChoice === "Scissors" && computerMove === "Paper") {
-    console.log("Won!") }
-    }
+//play a single round func
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        console.log("Draw!")}
+    else { if (playerSelection === "Rock" &&
+     computerSelection === "Scissors") {
+        console.log("Won!") }
+    else if (playerSelection === "Rock" &&
+     computerSelection === "Paper") {
+        console.log("Lose!") }
+    else if (playerSelection === "Paper" &&
+     computerSelection === "Rock") {
+        console.log("Won!") }
+    else if (playerSelection === "Paper" &&
+     computerSelection === "Scissors") {
+        console.log("Lose!") }
+    else if (playerSelection === "Scissors" &&
+     computerSelection === "Rock") {
+        console.log("Lose!") }
+    else if (playerSelection === "Scissors" &&
+     computerSelection === "Paper") {
+        console.log("Won!") }
+        } 
+}
+console.log(playRound(playerSelection, computerSelection));
