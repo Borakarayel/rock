@@ -1,2 +1,19 @@
 body {background-color: cornflowerblue;
-font: size 20px;px;}
+}
+
+button {cursor: pointer;
+    border: none;
+    width: 100px;
+    height: auto;  
+    font-weight: 800;
+}
+
+.flex-container {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+
+p {text-align: center;
+font-style: italic;
+border: 1px solid #000;
+padding: 10px;}
