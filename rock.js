@@ -71,5 +71,3 @@ function logRound(playerChoice, computerChoice, winner, round) {
     console.log("+1 Point to: ", winner);
     console.log("#######################");
 }
-
-game()
