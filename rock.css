@@ -7,7 +7,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    color: white;
+    color: rgb(245, 238, 238);
     text-shadow: 0 0 4px black;
   }
   .choices {
