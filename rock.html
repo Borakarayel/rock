@@ -5,22 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors Game</title>
-    <link rel="stylesheet" href="rock.css">
+    <link rel="stylesheet" href="rock.css"/>
 </head>
-<body>
-    <div class="flex-container">
-    
+    <body>
+        <div class="score">
+          <h1 class="ties">Ties: 0</h1>
+        </div>
+        <div class="winnerDiv">
+          <h1 class="winner"></h1>
+          <button class="reset" onclick="resetGame()">Play Again?</button>
+        </div>
+        <div class="playerSection">
+          <h3 class="playerChoice"></h3>
+          <h3 class="playerScore">Score: 0</h3>
+          <div class="playerImgs">
+            <img src="./images/rock.png" alt="Rock" class="pImg" id="rock" />
+            <img src="./images/paper.png" alt="Paper" class="pImg" id="paper" />
+            <img
+              src="./images/scissors.png"
+              alt="Scissors"
+              class="pImg"
+              id="scissors"
+            />
+          </div>
+        </div>
+        <div class="computerSection">
+          <h3 class="computerChoice"></h3>
+          <h3 class="computerScore">Score: 0</h3>
+          <div class="computerImgs">
+            <img src="./images/rock.png" alt="Rock" class="rock" />
+            <img src="./images/paper.png" alt="Paper" class="paper" />
+            <img src="./images/scissors.png" alt="Scissors" class="scissors" />
+          </div>
+        </div>
+      </body>
 
-        
-        <p>This game is played in the console.<br>
-            For Windows/Linux press F12 or CRTL+Shift+J, for MAC OS press Option+J to open console.
-            <br><br>
-            Good Luck!</p>
-            
-<button onclick="game()">Start<br> the<br> Game. </button>
-
-
-    </div>
-    <script src="rock.js" charset="UTF-8"></script>
-</body>
+<script src="rock.js"></script>
 </html>
